@@ -1,0 +1,25 @@
+{%extends "blog/base.html" %}
+{%block content%}
+  <img class ="map-background" 
+  src="https://i.etsystatic.com/6953299/r/il/f11a76/496587245/il_1588xN.496587245_so8b.jpg"
+  style="width: 1150px; z-index: -1;"
+  >
+  <a class="btn btn-info" style="position:absolute; left: 100px; top: 220px;" href="{% url 'post-detail' 38 %}">Meeting Business King</a>
+  <a class="btn btn-warning" style="position:absolute; left: 250px; top: 96px;" href="{% url 'story1'%}">Enemy Encounter I</a>
+  <a class="btn btn-info" style="position:absolute; left: 600px; top: 96px;" href="{% url 'post-detail' 36 %}">NPC II</a>
+  <a class="btn btn-warning" style="position:absolute; left: 750px; top: 96px;">Fight II</a>
+  <a class="btn btn-danger" style="position:absolute; left: 880px; top: 96px;">Boss Fight I</a>
+  <a class="btn btn-success" style="position:absolute; left: 900px; top: 250px;">Bonus Level</a>
+  <a class="btn btn-info" style="position:absolute; left: 750px; top: 250px;">NPC III</a>
+  <a class="btn btn-warning" style="position:absolute; left: 600px; top: 250px;">Fight III</a>
+  <a class="btn btn-info" style="position:absolute; left: 585px; top: 413px;">Card Master</a>
+  <a class="btn btn-danger" style="position:absolute; left: 436px; top: 413px;">Boss II</a>
+  <a class="btn btn-info" style="position:absolute; left: 285px; top: 413px;">NPC V</a>
+  <a class="btn btn-warning" style="position:absolute; left: 285px; top: 555px;">Fight IV</a>
+  <a class="btn btn-info" style="position:absolute; left: 285px; top: 727px;">NPC VI</a>
+  <a class="btn btn-danger" style="position:absolute; left: 436px; top: 727px;">Big Boss I</a>
+  <a class="btn btn-info" style="position:absolute; left: 600px; top: 727px;">NPC</a>
+  <a class="btn btn-danger" style="position:absolute; left: 600px; top: 571px;">Big Boss II</a>
+  <a class="btn btn-success" style="position:absolute; left: 436px; top: 571px;">Bonus</a>
+  <a class="btn btn-danger" style="position:absolute; left: 900px; top: 571px;">Final Boss</a>
+{%endblock content%}

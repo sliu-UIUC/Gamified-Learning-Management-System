@@ -1,0 +1,45 @@
+
+
+<SCRIPT LANGUAGE="JAVASCRIPT">
+  
+  var r_text = new Array ();
+  r_text[0] = "You are able to fight your first enemy on the road. Be sure to meet with the business King to make sure you are ready for this challenge.";
+  r_text[1] = "The business king gives you a secret scroll detailing how you can fight your first enemy. You keep reminding your self that the enemy isn't hard to defeat, but you have to be 100% ready to get a good start. You hold your sword more tightly. You feel like you are ready for the challenge.";
+  r_text[2] = "You just realize you have unlimited lives. Meaning that even though you might fail, you will be able to resurrect and do it again. Losing and dying is painful, though, so you prepare to succeed";
+  r_text[3] = "There is nothing to lose. Go for it!";
+  r_text[4] = "Just Go!!!!!!!!!";
+  
+  var i = Math.floor(r_text.length * Math.random());
+  
+  document.write("<br /><br /><br /><br /><br /><br /><br /><center><FONT SIZE=72><FONT COLOR='#FFFFFF'>" +
+  r_text[i]  + "</FONT></center><br />");
+  
+  var bgcolorlist=new Array("#228B22", "#FFD700", "#ADFF2F", "#FF69B4", "#CD5C5C", "#4B0082", "#7CFC00", "#ADD8E6", "#E84643", "#ED0A07", "#EA2907", "#E5294B", "#E00D26", "#FF3030", "#FC7500", "#F95700", "#F43900", "#F95620")
+  
+  document.body.style.background=bgcolorlist[Math.floor(Math.random()*bgcolorlist.length)];
+  
+  document.write("<div class='wrapper'><button id='gotoButton'>Encounter the enemy!</button></div>")
+
+  document.getElementById("gotoButton").onclick = function() {
+    location.href = "../quiz/fstj";
+  }
+  
+  </script><br> <br>
+      <br>
+      <br>
+      <style type="text/css">
+
+  body,td,th {
+       color: #000;
+       font-family: Helvetica, sans-serif;
+  }
+
+  #wrapper {
+    text-align: center;
+    left:50%
+  }
+
+.button {
+  position: absolute;
+  left: 50%;
+}
