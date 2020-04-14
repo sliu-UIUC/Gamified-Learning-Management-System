@@ -41,7 +41,9 @@ pytz==2019.3
 requests==2.23.0
 six==1.14.0
 sqlparse==0.3.0
+style==1.1.0
 Unidecode==1.1.1
+update==0.0.1
 urllib3==1.25.8
 webencodings==0.5.1
 whitenoise==5.0.1
