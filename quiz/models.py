@@ -60,7 +60,7 @@ class Quiz(models.Model):
 
     category = models.ForeignKey(
         Category, null=True, blank=True,
-        verbose_name=_("Category"), on_delete=models.CASCADE)
+        verbose_name=_("Category"), on_delete=models.NOTHING)
 
     random_order = models.BooleanField(
         blank=False, default=False,
