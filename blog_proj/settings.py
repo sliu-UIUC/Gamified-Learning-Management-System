@@ -32,6 +32,10 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    #'mcq.apps.McqConfig', 
+    #'quiz.apps.QuizConfig', 
+    #'shop.apps.ShopConfig', 
+    #'userInventory.apps.UserinventoryConfig',      
     'blog.apps.BlogConfig',
     'users.apps.UsersConfig',
     'crispy_forms', 
