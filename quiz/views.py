@@ -142,6 +142,8 @@ class QuizTake(FormView):
     template_name = 'question.html'
 
     def dispatch(self, request, *args, **kwargs):
+        if(not request.user.is_authenticated):
+            return redirect('login')
         self.quiz = get_object_or_404(Quiz, url=self.kwargs['quiz_name'])
         if self.quiz.draft and not request.user.has_perm('quiz.change_quiz'):
             raise PermissionDenied
