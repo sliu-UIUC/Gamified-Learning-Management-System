@@ -4,12 +4,11 @@ certifi==2020.4.5.1
 chardet==3.0.4
 distlib==0.3.0
 dj-database-url==0.5.0
-Django==2.0
+Django==2.1.5
 django-admin-sortable2==0.7.5
 django-angular==2.2.4
 django-appconf==1.0.4
 django-classy-tags==1.0.0
-django-cms==3.7.1
 django-crispy-forms==1.9.0
 django-entangled==0.3
 django-filer==1.7.0
@@ -28,7 +27,6 @@ django-quiz-app==0.5.1
 django-rest-auth==0.9.5
 django-sekizai==1.1.0
 django-select2==7.2.0
-django-shop==1.1.1
 django-treebeard==4.3.1
 djangocms-admin-style==1.5.0
 djangocms-cascade==1.2.3

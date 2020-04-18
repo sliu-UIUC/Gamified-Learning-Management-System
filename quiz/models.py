@@ -171,7 +171,8 @@ class Progress(models.Model):
     Data stored in csv using the format:
         category, score, possible, category, score, possible, ...
     """
-    user = models.OneToOneField(settings.AUTH_USER_MODEL, verbose_name=_("User"), on_delete=models.CASCADE)
+    #user = models.OneToOneField(settings.AUTH_USER_MODEL, verbose_name=_("User"), on_delete=models.CASCADE)
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
 
     score = models.CharField(validators=[validate_comma_separated_integer_list], max_length=1024,
                                               verbose_name=_("Score"))
@@ -401,6 +402,9 @@ class Sitting(models.Model):
         self.save()
 
     def add_to_score(self, points):
+        cur = self.user
+        cur.profile.money +=20*int(points)
+        cur.save()
         self.current_score += int(points)
         self.save()
 
@@ -467,6 +471,7 @@ class Sitting(models.Model):
     @property
     def result_message(self):
         if self.check_if_passed:
+            
             return self.quiz.success_text
         else:
             return self.quiz.fail_text

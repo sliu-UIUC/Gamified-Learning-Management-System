@@ -4,6 +4,7 @@ from django.contrib.auth.decorators import login_required
 from .forms import UserRegisterForm, UserUpdateForm, ProfileUpdateForm
 from django.db.models import F
 from .models import User
+from userInventory.models import UserStorage
 
 def register(request):
   if request.method=='POST':

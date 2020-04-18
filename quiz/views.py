@@ -149,8 +149,10 @@ class QuizTake(FormView):
         self.logged_in_user = self.request.user.is_authenticated
 
         if self.logged_in_user:
-            self.sitting = Sitting.objects.user_sitting(request.user,
-                                                        self.quiz)
+            self.sitting = Sitting.objects.user_sitting(request.user,self.quiz)
+        else:
+            return redirect('login')
+
         if self.sitting is False:
             return render(request, 'single_complete.html')
 
