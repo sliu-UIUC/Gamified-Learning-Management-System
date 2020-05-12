@@ -6,3 +6,7 @@
 
 
 The website is deployed on Pythonanywhere and website is here: https://misterfish.pythonanywhere.com/.
+
+I taught myself Django for building this website. I use some bootstrap for front-end rendering just for convenience. The website has features including user register/login, quizzes, content posting/viewing, store, and user inventories. Users can earn in-game currencies by doing quizzes to purchase stuff from the store. Purchased items will be added to user's inventory. 
+
+More features will be added to it, including more quiz types, more story telling/narratives and maybe powerups.
